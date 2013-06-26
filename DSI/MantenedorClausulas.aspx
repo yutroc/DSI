@@ -20,5 +20,6 @@
     <asp:SqlDataSource ID="SqlDataSourceClausula" runat="server" 
         ConnectionString="<%$ ConnectionStrings:ConnectionStringDSI %>" 
         ProviderName="<%$ ConnectionStrings:ConnectionStringDSI.ProviderName %>" 
-        SelectCommand="SELECT * FROM &quot;SC_CLAUSULA&quot;"></asp:SqlDataSource>
+        
+        SelectCommand="SELECT SC_CLAUSULA.ID_CLAUSULA, SC_CLAUSULA.TITULO, SC_CLAUSULA.DESCRIPCION, ESTADO.ESTADO FROM SC_CLAUSULA, ESTADO WHERE SC_CLAUSULA.ESTADO = ESTADO.ID"></asp:SqlDataSource>
 </asp:Content>
