@@ -11,32 +11,23 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class FormClausula
+Partial Public Class SelecionClienteContrato
 
     '''<summary>
-    '''Control LabelMensajes.
+    '''Control GridViewClienteParaContrato.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents LabelMensajes As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents GridViewClienteParaContrato As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
-    '''Control FormViewClausula.
+    '''Control SqlDataSourceClienteParaContrato.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents FormViewClausula As Global.System.Web.UI.WebControls.FormView
-
-    '''<summary>
-    '''Control SqlDataSourceClausula.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents SqlDataSourceClausula As Global.System.Web.UI.WebControls.SqlDataSource
+    Protected WithEvents SqlDataSourceClienteParaContrato As Global.System.Web.UI.WebControls.SqlDataSource
 End Class

@@ -238,10 +238,10 @@
             &nbsp;
         </ItemTemplate>
     </asp:FormView>
-    <asp:SqlDataSource ID="SqlDataSourceMenuCliente" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString3 %>"
+    <asp:SqlDataSource ID="SqlDataSourceMenuCliente" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionStringDSI %>"
         DeleteCommand="DELETE FROM &quot;SC_CLIENTE&quot; WHERE &quot;RUT&quot; = :RUT"
         InsertCommand="INSERT INTO &quot;SC_CLIENTE&quot; (&quot;RUT&quot;, &quot;NOMBRE&quot;, &quot;DIRECCION&quot;, &quot;COMUNA&quot;, &quot;CIUDAD&quot;, &quot;TELEFONO&quot;, &quot;ESTADO&quot;, &quot;EMAIL&quot;) VALUES (:RUT, :NOMBRE, :DIRECCION, :COMUNA, :CIUDAD, :TELEFONO, :ESTADO, :EMAIL)"
-        ProviderName="<%$ ConnectionStrings:ConnectionString3.ProviderName %>" SelectCommand="SELECT * FROM &quot;SC_CLIENTE&quot; WHERE (&quot;RUT&quot; = :RUT)"
+        ProviderName="<%$ ConnectionStrings:ConnectionStringDSI.ProviderName %>" SelectCommand="SELECT * FROM &quot;SC_CLIENTE&quot; WHERE (&quot;RUT&quot; = :RUT)"
         UpdateCommand="UPDATE &quot;SC_CLIENTE&quot; SET &quot;NOMBRE&quot; = :NOMBRE, &quot;DIRECCION&quot; = :DIRECCION, &quot;COMUNA&quot; = :COMUNA, &quot;CIUDAD&quot; = :CIUDAD, &quot;TELEFONO&quot; = :TELEFONO, &quot;ESTADO&quot; = :ESTADO, &quot;EMAIL&quot; = :EMAIL WHERE &quot;RUT&quot; = :RUT">
         <DeleteParameters>
             <asp:Parameter Name="RUT" Type="String" />

@@ -17,10 +17,10 @@
     </Columns>
 </asp:GridView>
 <asp:SqlDataSource ID="SqlDataSourceCliente" runat="server" 
-    ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+    ConnectionString="<%$ ConnectionStrings:ConnectionStringDSI %>" 
     DeleteCommand="DELETE FROM &quot;SC_CLIENTE&quot; WHERE &quot;RUT&quot; = :RUT" 
     InsertCommand="INSERT INTO &quot;SC_CLIENTE&quot; (&quot;RUT&quot;, &quot;NOMBRE&quot;, &quot;DIRECCION&quot;) VALUES (:RUT, :NOMBRE, :DIRECCION)" 
-    ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" 
+    ProviderName="<%$ ConnectionStrings:ConnectionStringDSI.ProviderName %>" 
     SelectCommand="SELECT &quot;RUT&quot;, &quot;NOMBRE&quot;, &quot;DIRECCION&quot; FROM &quot;SC_CLIENTE&quot; ORDER BY &quot;NOMBRE&quot;" 
     UpdateCommand="UPDATE &quot;SC_CLIENTE&quot; SET &quot;NOMBRE&quot; = :NOMBRE, &quot;DIRECCION&quot; = :DIRECCION WHERE &quot;RUT&quot; = :RUT">
     <DeleteParameters>
