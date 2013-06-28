@@ -11,32 +11,50 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class FormAnexo
+Partial Public Class Site1
 
     '''<summary>
-    '''Control LabelMensajes.
+    '''Control HeadContent.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents LabelMensajes As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents HeadContent As Global.System.Web.UI.WebControls.ContentPlaceHolder
 
     '''<summary>
-    '''Control FormViewAnexo.
+    '''Control Form1.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents FormViewAnexo As Global.System.Web.UI.WebControls.FormView
+    Protected WithEvents Form1 As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
-    '''Control SqlDataSourceAnexo.
+    '''Control HeadLoginView.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents SqlDataSourceAnexo As Global.System.Web.UI.WebControls.SqlDataSource
+    Protected WithEvents HeadLoginView As Global.System.Web.UI.WebControls.LoginView
+
+    '''<summary>
+    '''Control NavigationMenu.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents NavigationMenu As Global.System.Web.UI.WebControls.Menu
+
+    '''<summary>
+    '''Control MainContent.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents MainContent As Global.System.Web.UI.WebControls.ContentPlaceHolder
 End Class

@@ -41,15 +41,14 @@ h1, h2, h3, h4, h5, h6
 {
     font-size: 1.5em;
     color: #666666;
-    font-variant: small-caps;
-    text-transform: none;
-    font-weight: 200;
+    font-family:Segoe UI Light;
     margin-bottom: 0px;
+    text-decoration:none;
 }
 
 h1
 {
-    font-size: 1.6em;
+    font-size: 2em;
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
@@ -91,7 +90,7 @@ first child of the left and right table columns */
     width: 960px;
     background-color: #fff;
     margin: 20px auto 0px auto;
-    border: 1px solid #496077;
+    border: 1px solid #fff;
 }
 
 .header
@@ -99,19 +98,18 @@ first child of the left and right table columns */
     position: relative;
     margin: 0px;
     padding: 0px;
-    background: #4b6c9e;
+    background: #79B500;
     width: 100%;
 }
 
 .header h1
 {
-    font-weight: 700;
+    font-family:Segoe UI light;
     margin: 0px;
-    padding: 0px 0px 0px 20px;
+    padding: 0px 0px 20px 30px;
     color: #f9f9f9;
-    border: none;
     line-height: 2em;
-    font-size: 2em;
+    font-size: 3.2em;
 }
 
 .main
@@ -163,6 +161,7 @@ div.menu ul
 
 div.menu ul li a, div.menu ul li a:visited
 {
+    	font-weight: bold;
     background-color: #465c71;
     border: 1px #4e667d solid;
     color: #dde4ec;
@@ -175,6 +174,7 @@ div.menu ul li a, div.menu ul li a:visited
 
 div.menu ul li a:hover
 {
+    	font-weight: bold;
     background-color: #bfcbd6;
     color: #465c71;
     text-decoration: none;
@@ -182,6 +182,7 @@ div.menu ul li a:hover
 
 div.menu ul li a:active
 {
+    	font-weight: bold;
     background-color: #465c71;
     color: #cfdbe6;
     text-decoration: none;
@@ -197,9 +198,10 @@ fieldset
     border: 1px solid #ccc;
 }
 
-fieldset p 
+fieldset p
 {
     margin: 2px 12px 10px 10px;
+    font-size:1.5em;
 }
 
 fieldset.login label, fieldset.register label, fieldset.changePassword label
@@ -221,19 +223,37 @@ legend
 
 input.textEntry 
 {
-    width: 320px;
-    border: 1px solid #ccc;
+    
+    width:250px;
+    font-size: 0.9em;
+    height:30px;
+    border: 1.5px solid #696969;
 }
 
 input.passwordEntry 
 {
-    width: 320px;
-    border: 1px solid #ccc;
+    
+    width:250px;
+    font-size: 0.9em;
+    height:30px;
+    border: 1.5px solid #696969;
 }
 
 div.accountInfo
 {
-    width: 42%;
+    width: 300px;
+    float:right;
+    
+}
+
+div.accountInfo fieldset.login h2
+{
+    font-family:Arial, Segoe UI Light ;
+    margin: 0px;
+    padding: 10px 0px 20px 10px;
+    
+    
+    
 }
 
 /* MISC  
@@ -247,7 +267,7 @@ div.accountInfo
 .title
 {
     display: block;
-    float: left;
+    float:left;
     text-align: left;
     width: auto;
 }
@@ -256,7 +276,7 @@ div.accountInfo
 {
     font-size: 1.1em;
     display: block;
-    text-align: right;
+    text-align:right;
     padding: 10px;
     color: White;
 }
@@ -289,6 +309,30 @@ div.accountInfo
 
 .submitButton
 {
+    
     text-align: right;
     padding-right: 10px;
+}
+.botones
+{
+    background: #79B500 repeat-x;
+	display: inline-block;
+	padding: 5px 10px 6px;
+	color: #fff;
+	text-decoration: none;
+
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	box-shadow: 5px 5px 0 #333;
+   -webkit-box-shadow: 5px 5px 0 #333;
+   -moz-box-shadow: 5px 5px 0 #333;
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+	position: relative;
+	cursor: pointer;
+}
+
+
+div.TituloPagina h1 
+{
+   margin : 5px 0px 15px 0px;       
 }

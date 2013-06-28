@@ -14,6 +14,7 @@
     <AssemblyName>DSI</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -92,14 +93,24 @@
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="FormAnexo.aspx" />
+    <Content Include="FormProducto.aspx" />
+    <Content Include="ListadoContratoClausula.aspx" />
+    <Content Include="MantenedorAnexo.aspx" />
     <Content Include="MantenedorClausulas.aspx" />
+    <Content Include="MantenedorProducto.aspx" />
+    <Content Include="MenuCliente.aspx" />
+    <Content Include="MenuContrato.aspx" />
+    <Content Include="MenuContratoClausula.aspx" />
+    <Content Include="SelecionClienteContrato.aspx" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -107,6 +118,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="FormClausula.aspx" />
+    <Content Include="WebFormListadoCliente.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.designer.vb">
@@ -158,8 +170,43 @@
       <DependentUpon>FormAnexo.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="FormProducto.aspx.designer.vb">
+      <DependentUpon>FormProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormProducto.aspx.vb">
+      <DependentUpon>FormProducto.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Global.Master.designer.vb">
+      <DependentUpon>Global.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Global.Master.vb">
+      <DependentUpon>Global.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.Master.designer.vb">
+      <DependentUpon>Index.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Index.Master.vb">
+      <DependentUpon>Index.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListadoContratoClausula.aspx.designer.vb">
+      <DependentUpon>ListadoContratoClausula.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoContratoClausula.aspx.vb">
+      <DependentUpon>ListadoContratoClausula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenedorAnexo.aspx.designer.vb">
+      <DependentUpon>MantenedorAnexo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorAnexo.aspx.vb">
+      <DependentUpon>MantenedorAnexo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MantenedorClausulas.aspx.designer.vb">
       <DependentUpon>MantenedorClausulas.aspx</DependentUpon>
@@ -167,6 +214,34 @@
     <Compile Include="MantenedorClausulas.aspx.vb">
       <DependentUpon>MantenedorClausulas.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MantenedorProducto.aspx.designer.vb">
+      <DependentUpon>MantenedorProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorProducto.aspx.vb">
+      <DependentUpon>MantenedorProducto.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MenuCliente.aspx.designer.vb">
+      <DependentUpon>MenuCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuCliente.aspx.vb">
+      <DependentUpon>MenuCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuContrato.aspx.designer.vb">
+      <DependentUpon>MenuContrato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuContrato.aspx.vb">
+      <DependentUpon>MenuContrato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuContratoClausula.aspx.designer.vb">
+      <DependentUpon>MenuContratoClausula.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuContratoClausula.aspx.vb">
+      <DependentUpon>MenuContratoClausula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -187,6 +262,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="SelecionClienteContrato.aspx.designer.vb">
+      <DependentUpon>SelecionClienteContrato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SelecionClienteContrato.aspx.vb">
+      <DependentUpon>SelecionClienteContrato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Site.Master.designer.vb">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
@@ -201,6 +283,13 @@
       <DependentUpon>FormClausula.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="WebFormListadoCliente.aspx.designer.vb">
+      <DependentUpon>WebFormListadoCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFormListadoCliente.aspx.vb">
+      <DependentUpon>WebFormListadoCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -212,6 +301,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Account\Web.config" />
+    <Content Include="Global.Master" />
+    <Content Include="Index.Master" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

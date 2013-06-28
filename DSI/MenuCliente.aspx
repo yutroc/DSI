@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master"
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Global.Master"
     CodeBehind="MenuCliente.aspx.vb" Inherits="DSI.MenuCliente" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">

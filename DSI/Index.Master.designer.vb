@@ -11,32 +11,23 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class FormAnexo
+Partial Public Class Site
 
     '''<summary>
-    '''Control LabelMensajes.
+    '''Control HeadContent.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents LabelMensajes As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents HeadContent As Global.System.Web.UI.WebControls.ContentPlaceHolder
 
     '''<summary>
-    '''Control FormViewAnexo.
+    '''Control MainContent.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents FormViewAnexo As Global.System.Web.UI.WebControls.FormView
-
-    '''<summary>
-    '''Control SqlDataSourceAnexo.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents SqlDataSourceAnexo As Global.System.Web.UI.WebControls.SqlDataSource
+    Protected WithEvents MainContent As Global.System.Web.UI.WebControls.ContentPlaceHolder
 End Class

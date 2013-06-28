@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Página principal" Language="vb" MasterPageFile="~/Site.Master" AutoEventWireup="false"
+﻿<%@ Page Title="Página principal" Language="vb" MasterPageFile="~/Global.Master" AutoEventWireup="false"
     CodeBehind="Default.aspx.vb" Inherits="DSI._Default" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
