@@ -1,9 +1,10 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Global.Master" CodeBehind="MenuContratoClausula.aspx.vb" Inherits="DSI.MenuContratoClausula" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="MenuContratoClausula.aspx.vb" Inherits="DSI.MenuContratoClausula" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 <h2>Agregar clausulas al contrato</h2>
 <h3> <asp:Label ID="LabelMensaje" runat="server" Text=""></asp:Label></h3>
+    <p> &nbsp;</p>
     <h3>Seleccione las clausulas que desea agregar</h3>
     <asp:GridView ID="GridViewClausula" runat="server" AllowPaging="True" 
         AutoGenerateColumns="False" DataKeyNames="ID_CLAUSULA" 
@@ -29,7 +30,8 @@
         DeleteCommand="DELETE FROM &quot;SC_CONTRATO&quot; WHERE &quot;ID_CONTRATO&quot; = :ID_CONTRATO" 
         InsertCommand="INSERT INTO &quot;SC_CONTRATO&quot; (&quot;ID_CONTRATO&quot;, &quot;FC_CREACION&quot;, &quot;FC_INICIO&quot;, &quot;FC_TERMINO&quot;, &quot;ESTADO_VIGENCIA&quot;, &quot;VALOR_TOTAL&quot;, &quot;ID_TIPO_CONTRATO&quot;, &quot;RUT&quot;, &quot;U_ORIGEN&quot;, &quot;U_DESTINO&quot;) VALUES (:ID_CONTRATO, :FC_CREACION, :FC_INICIO, :FC_TERMINO, :ESTADO_VIGENCIA, :VALOR_TOTAL, :ID_TIPO_CONTRATO, :RUT, :U_ORIGEN, :U_DESTINO)" 
         ProviderName="<%$ ConnectionStrings:ConnectionStringDSI.ProviderName %>" 
-        SelectCommand="SELECT * FROM &quot;SC_CONTRATO&quot; WHERE (&quot;ID_CONTRATO&quot; = :ID_CONTRATO)" 
+        SelectCommand="SELECT MAX(&quot;ID_CONTRATO&quot;) as m FROM SC_CONTRATO" 
+        
         UpdateCommand="UPDATE &quot;SC_CONTRATO&quot; SET &quot;FC_CREACION&quot; = :FC_CREACION, &quot;FC_INICIO&quot; = :FC_INICIO, &quot;FC_TERMINO&quot; = :FC_TERMINO, &quot;ESTADO_VIGENCIA&quot; = :ESTADO_VIGENCIA, &quot;VALOR_TOTAL&quot; = :VALOR_TOTAL, &quot;ID_TIPO_CONTRATO&quot; = :ID_TIPO_CONTRATO, &quot;RUT&quot; = :RUT, &quot;U_ORIGEN&quot; = :U_ORIGEN, &quot;U_DESTINO&quot; = :U_DESTINO WHERE &quot;ID_CONTRATO&quot; = :ID_CONTRATO">
         <DeleteParameters>
             <asp:Parameter Name="ID_CONTRATO" Type="Decimal" />
@@ -46,10 +48,6 @@
             <asp:Parameter Name="U_ORIGEN" Type="Decimal" />
             <asp:Parameter Name="U_DESTINO" Type="Decimal" />
         </InsertParameters>
-        <SelectParameters>
-            <asp:SessionParameter Name="ID_CONTRATO" SessionField="idContratoClausula" 
-                Type="Decimal" />
-        </SelectParameters>
         <UpdateParameters>
             <asp:Parameter Name="FC_CREACION" Type="String" />
             <asp:Parameter Name="FC_INICIO" Type="String" />
@@ -77,11 +75,10 @@
         </Columns>
     </asp:GridView>
     <asp:SqlDataSource ID="SqlDataSourceClausulasDelContrato" runat="server" 
-        ConnectionString="<%$ ConnectionStrings:connectionStringDSI %>" 
+        ConnectionString="<%$ ConnectionStrings:ConnectionStringDSI %>" 
         DeleteCommand="DELETE FROM &quot;SC_CONTRATO_CLAUSULA&quot; WHERE &quot;ID_CONTRATO&quot; = :ID_CONTRATO AND &quot;ID_CLAUSULA&quot; = :ID_CLAUSULA" 
         InsertCommand="INSERT INTO &quot;SC_CONTRATO_CLAUSULA&quot; (&quot;ID_CONTRATO&quot;, &quot;ID_CLAUSULA&quot;) VALUES (:ID_CONTRATO, :ID_CLAUSULA)" 
-        ProviderName="<%$ ConnectionStrings:connectionStringDSI.ProviderName %>" 
-        
+        ProviderName="<%$ ConnectionStrings:ConnectionStringDSI.ProviderName %>" 
         SelectCommand="SELECT * FROM &quot;SC_CONTRATO_CLAUSULA&quot; WHERE (&quot;ID_CONTRATO&quot; = :ID_CONTRATO)">
         <DeleteParameters>
             <asp:Parameter Name="ID_CONTRATO" Type="Decimal" />
@@ -92,9 +89,9 @@
             <asp:Parameter Name="ID_CLAUSULA" Type="Decimal" />
         </InsertParameters>
         <SelectParameters>
-            <asp:SessionParameter Name="ID_CONTRATO" SessionField="idContratoClausula" 
+            <asp:SessionParameter Name="ID_CONTRATO" SessionField="IdUltimoContratoInsert" 
                 Type="Decimal" />
         </SelectParameters>
     </asp:SqlDataSource>
-    <asp:LinkButton ID="LinkButton1" runat="server">Salir</asp:LinkButton>
+    <asp:LinkButton ID="LinkButton1" runat="server">Siguiente</asp:LinkButton>
 </asp:Content>

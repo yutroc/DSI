@@ -14,6 +14,15 @@ Option Explicit On
 Partial Public Class MenuContrato
 
     '''<summary>
+    '''Control LabelMensaje.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents LabelMensaje As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''Control FormViewMenuContrato.
     '''</summary>
     '''<remarks>
@@ -21,6 +30,15 @@ Partial Public Class MenuContrato
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents FormViewMenuContrato As Global.System.Web.UI.WebControls.FormView
+
+    '''<summary>
+    '''Control SqlDataSourceMenuContrato.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents SqlDataSourceMenuContrato As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
     '''Control SqlDataSourceClienteContrato.
@@ -32,11 +50,20 @@ Partial Public Class MenuContrato
     Protected WithEvents SqlDataSourceClienteContrato As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
-    '''Control SqlDataSourceMenuContrato.
+    '''Control SqlDataSourceGuardaClienteContrato.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents SqlDataSourceMenuContrato As Global.System.Web.UI.WebControls.SqlDataSource
+    Protected WithEvents SqlDataSourceGuardaClienteContrato As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''Control SqlDataSourceEstadoContrato.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents SqlDataSourceEstadoContrato As Global.System.Web.UI.WebControls.SqlDataSource
 End Class

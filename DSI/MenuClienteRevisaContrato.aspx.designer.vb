@@ -11,16 +11,34 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class listaContratoClausula
+Partial Public Class MenuClienteRevisaContrato
 
     '''<summary>
-    '''Control Label4.
+    '''Control Label1.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control GridView1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents GridView1 As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
+    '''Control SqlDataSourceMenuCLienteRevisaContrato.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents SqlDataSourceMenuCLienteRevisaContrato As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
     '''Control LinkButton1.
@@ -30,31 +48,4 @@ Partial Public Class listaContratoClausula
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents LinkButton1 As Global.System.Web.UI.WebControls.LinkButton
-
-    '''<summary>
-    '''Control GridViewContrato.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents GridViewContrato As Global.System.Web.UI.WebControls.GridView
-
-    '''<summary>
-    '''Control SqlDataSourceContratoParaClausula.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents SqlDataSourceContratoParaClausula As Global.System.Web.UI.WebControls.SqlDataSource
-
-    '''<summary>
-    '''Control SqlDataSourceIdMax.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents SqlDataSourceIdMax As Global.System.Web.UI.WebControls.SqlDataSource
 End Class

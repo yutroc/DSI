@@ -40,6 +40,7 @@
                         <asp:MenuItem NavigateUrl="~/WebFormListadoCliente.aspx" Text="Clientes" />
                         <asp:MenuItem NavigateUrl="~/MantenedorAnexo.aspx" Text="Anexos" />
                         <asp:MenuItem NavigateUrl="~/MantenedorProducto.aspx" Text="Productos" />
+                        <asp:MenuItem NavigateUrl="~/ListadoCLienteRevisaContrato.aspx" Text="Contratos de un cliente" />
                     </Items>
                 </asp:Menu>
             </div>
