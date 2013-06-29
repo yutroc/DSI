@@ -24,7 +24,7 @@
     End Sub
 
     Protected Sub LinkButton1_Click(ByVal sender As Object, ByVal e As EventArgs) Handles LinkButton1.Click
-        Response.Redirect("ListadoContratoClausula.aspx")
+        Response.Redirect("Imprimible.aspx")
     End Sub
 
     Protected Sub GridViewProductosParaContrato_RowUpdated(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.GridViewUpdatedEventArgs) Handles GridViewProductosParaContrato.RowUpdated
@@ -44,4 +44,5 @@
         Session.Add("nombreProductoEnSeleccion", nombre)
         Me.GridViewProductos.DataBind()
     End Sub
+
 End Class
