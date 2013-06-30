@@ -2,6 +2,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="TituloPagina">
+        <h1>
+            Cláusulas</h1>
+    </div>
+    <h2>
+        Si desea ver, eliminar o editar alguna de las cláusulas, haga click en "seleccionar"</h2>
+    <div class="datagrid">
     <asp:GridView ID="GridViewClausula" runat="server" AllowPaging="True" 
         AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="ID_CLAUSULA" 
         DataSourceID="SqlDataSourceClausula">
@@ -17,6 +24,7 @@
             <asp:CommandField ShowSelectButton="True" />
         </Columns>
     </asp:GridView>
+    </div>
     <asp:SqlDataSource ID="SqlDataSourceClausula" runat="server" 
         ConnectionString="<%$ ConnectionStrings:ConnectionStringDSI %>" 
         ProviderName="<%$ ConnectionStrings:ConnectionStringDSI.ProviderName %>" 

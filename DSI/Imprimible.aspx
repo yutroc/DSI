@@ -247,7 +247,9 @@
         <center><h2>
             PRODUCTOS</h2>
         </center>
-&nbsp;<asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
+&nbsp;
+        <div class="datagrid">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
             DataSourceID="SqlDataSourceProductos">
             <Columns>
                 <asp:BoundField DataField="CANTIDAD" HeaderText="CANTIDAD" 
@@ -264,11 +266,14 @@
                     SortExpression="VOLUMEN" />
             </Columns>
         </asp:GridView>
+        </div>
+
     
         <center><h2>
             CLAUSULAS</h2>
          </center>
    
+        <div class="datagrid">
         <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" 
             DataSourceID="SqlDataSourceClausula">
             <Columns>
@@ -278,12 +283,14 @@
                     SortExpression="DESCRIPCION" />
             </Columns>
         </asp:GridView>
+        </div>
     
     
         <center><h2>
             ANEXOS</h2>
         </center>
    
+        <div class="datagrid">
         <asp:GridView ID="GridView3" runat="server" AutoGenerateColumns="False" 
             DataSourceID="SqlDataSourceAnexo">
             <Columns>
@@ -293,6 +300,7 @@
                     SortExpression="DESCRIPCION" />
             </Columns>
         </asp:GridView>
+        </div>
         <center>
         <input type="button" value="Imprimir" onclick="print();" class="oculto" />
         </center>

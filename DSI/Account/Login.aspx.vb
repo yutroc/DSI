@@ -19,7 +19,7 @@ Public Class Login
 
         Session.Add("rut", login)
         Session.Add("password", password)
-        Dim consultaSQL As String
+
         Dim usuarioEncontrado As Boolean
         usuarioEncontrado = False
         Dim dv As DataView

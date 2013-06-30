@@ -37,7 +37,7 @@
                         <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Inicio" />
                         <asp:MenuItem NavigateUrl="~/ListadoContratoClausula.aspx" Text="Contratos" />
                         <asp:MenuItem Text="Cumplimientos" NavigateUrl="~/MenuCumplimiento.aspx" />
-                        <asp:MenuItem NavigateUrl="~/MantenedorClausulas.aspx" Text="Clusulas" />
+                        <asp:MenuItem NavigateUrl="~/MantenedorClausulas.aspx" Text="Cláusulas" />
                         <asp:MenuItem NavigateUrl="~/WebFormListadoCliente.aspx" Text="Clientes" />
                         <asp:MenuItem NavigateUrl="~/MantenedorAnexo.aspx" Text="Anexos" />
                         <asp:MenuItem NavigateUrl="~/MantenedorProducto.aspx" Text="Productos" />

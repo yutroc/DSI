@@ -4,6 +4,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="TituloPagina">
+        <h1>
+            Vista de Cliente</h1>
+    </div>
     <h3>
         <asp:Label ID="LabelMensaje" runat="server" Text=""></asp:Label></h3>
     <asp:FormView ID="FormViewMenuCliente" runat="server" DataKeyNames="RUT" DataSourceID="SqlDataSourceMenuCliente"

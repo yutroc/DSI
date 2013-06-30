@@ -52,6 +52,7 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
@@ -106,9 +107,12 @@
     <Content Include="MenuContratoAnexo.aspx" />
     <Content Include="MenuContratoClausula.aspx" />
     <Content Include="MenuContratoProducto.aspx" />
+    <Content Include="MenuCumplimiento.aspx" />
     <Content Include="ReporteClientes.aspx" />
     <Content Include="ReporteContrato.aspx" />
+    <Content Include="ReporteCumplimiento.aspx" />
     <Content Include="SelecionClienteContrato.aspx" />
+    <Content Include="Styles\Print.css" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
@@ -285,6 +289,13 @@
       <DependentUpon>MenuContratoProducto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="MenuCumplimiento.aspx.designer.vb">
+      <DependentUpon>MenuCumplimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuCumplimiento.aspx.vb">
+      <DependentUpon>MenuCumplimiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -316,6 +327,13 @@
     </Compile>
     <Compile Include="ReporteContrato.aspx.vb">
       <DependentUpon>ReporteContrato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReporteCumplimiento.aspx.designer.vb">
+      <DependentUpon>ReporteCumplimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteCumplimiento.aspx.vb">
+      <DependentUpon>ReporteCumplimiento.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="SelecionClienteContrato.aspx.designer.vb">

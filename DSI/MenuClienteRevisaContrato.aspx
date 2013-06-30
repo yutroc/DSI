@@ -1,9 +1,14 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Index.Master" CodeBehind="MenuClienteRevisaContrato.aspx.vb" Inherits="DSI.MenuClienteRevisaContrato" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Global.Master" CodeBehind="MenuClienteRevisaContrato.aspx.vb" Inherits="DSI.MenuClienteRevisaContrato" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:Label ID="Label1" runat="server" Text="Contratos del cliente"></asp:Label>
+<div class="TituloPagina">
+        <h1>
+            Contratos del Cliente Seleccionado</h1>
+    </div>
+    <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
     <br />
+    <div class="datagrid">
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
         DataKeyNames="ID_CONTRATO" 
         DataSourceID="SqlDataSourceMenuCLienteRevisaContrato">
@@ -29,6 +34,7 @@
                 SortExpression="U_DESTINO" />
         </Columns>
     </asp:GridView>
+    </div>
     <asp:SqlDataSource ID="SqlDataSourceMenuCLienteRevisaContrato" runat="server" 
         ConnectionString="<%$ ConnectionStrings:ConnectionStringDSI %>" 
         ProviderName="<%$ ConnectionStrings:ConnectionStringDSI.ProviderName %>" 
