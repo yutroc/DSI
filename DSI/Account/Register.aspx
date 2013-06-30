@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Registrarse" Language="vb" MasterPageFile="~/Site.Master" AutoEventWireup="false"
+﻿<%@ Page Title="Registrarse" Language="vb" MasterPageFile="~/Global.Master" AutoEventWireup="false"
     CodeBehind="Register.aspx.vb" Inherits="DSI.Register" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">

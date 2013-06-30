@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Acerca de nosotros" Language="vb" MasterPageFile="~/Site.Master" AutoEventWireup="false"
+﻿<%@ Page Title="Acerca de nosotros" Language="vb" MasterPageFile="~/Global.Master" AutoEventWireup="false"
     CodeBehind="About.aspx.vb" Inherits="DSI.About" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">

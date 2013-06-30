@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Cambiar contraseña" Language="vb" MasterPageFile="~/Site.Master" AutoEventWireup="false"
+﻿<%@ Page Title="Cambiar contraseña" Language="vb" MasterPageFile="~/Global.Master" AutoEventWireup="false"
     CodeBehind="ChangePasswordSuccess.aspx.vb" Inherits="DSI.ChangePasswordSuccess" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">

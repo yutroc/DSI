@@ -94,13 +94,20 @@
     <Content Include="Account\Register.aspx" />
     <Content Include="FormAnexo.aspx" />
     <Content Include="FormProducto.aspx" />
+    <Content Include="Imprimible.aspx" />
+    <Content Include="ListadoClienteRevisaContrato.aspx" />
     <Content Include="ListadoContratoClausula.aspx" />
     <Content Include="MantenedorAnexo.aspx" />
     <Content Include="MantenedorClausulas.aspx" />
     <Content Include="MantenedorProducto.aspx" />
     <Content Include="MenuCliente.aspx" />
+    <Content Include="MenuClienteRevisaContrato.aspx" />
     <Content Include="MenuContrato.aspx" />
+    <Content Include="MenuContratoAnexo.aspx" />
     <Content Include="MenuContratoClausula.aspx" />
+    <Content Include="MenuContratoProducto.aspx" />
+    <Content Include="ReporteClientes.aspx" />
+    <Content Include="ReporteContrato.aspx" />
     <Content Include="SelecionClienteContrato.aspx" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
@@ -187,11 +194,25 @@
       <DependentUpon>Global.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Imprimible.aspx.designer.vb">
+      <DependentUpon>Imprimible.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Imprimible.aspx.vb">
+      <DependentUpon>Imprimible.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Index.Master.designer.vb">
       <DependentUpon>Index.Master</DependentUpon>
     </Compile>
     <Compile Include="Index.Master.vb">
       <DependentUpon>Index.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListadoClienteRevisaContrato.aspx.designer.vb">
+      <DependentUpon>ListadoClienteRevisaContrato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoClienteRevisaContrato.aspx.vb">
+      <DependentUpon>ListadoClienteRevisaContrato.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ListadoContratoClausula.aspx.designer.vb">
@@ -229,6 +250,13 @@
       <DependentUpon>MenuCliente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="MenuClienteRevisaContrato.aspx.designer.vb">
+      <DependentUpon>MenuClienteRevisaContrato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuClienteRevisaContrato.aspx.vb">
+      <DependentUpon>MenuClienteRevisaContrato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="MenuContrato.aspx.designer.vb">
       <DependentUpon>MenuContrato.aspx</DependentUpon>
     </Compile>
@@ -236,11 +264,25 @@
       <DependentUpon>MenuContrato.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="MenuContratoAnexo.aspx.designer.vb">
+      <DependentUpon>MenuContratoAnexo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuContratoAnexo.aspx.vb">
+      <DependentUpon>MenuContratoAnexo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="MenuContratoClausula.aspx.designer.vb">
       <DependentUpon>MenuContratoClausula.aspx</DependentUpon>
     </Compile>
     <Compile Include="MenuContratoClausula.aspx.vb">
       <DependentUpon>MenuContratoClausula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuContratoProducto.aspx.designer.vb">
+      <DependentUpon>MenuContratoProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuContratoProducto.aspx.vb">
+      <DependentUpon>MenuContratoProducto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -262,18 +304,25 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="ReporteClientes.aspx.designer.vb">
+      <DependentUpon>ReporteClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteClientes.aspx.vb">
+      <DependentUpon>ReporteClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReporteContrato.aspx.designer.vb">
+      <DependentUpon>ReporteContrato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteContrato.aspx.vb">
+      <DependentUpon>ReporteContrato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="SelecionClienteContrato.aspx.designer.vb">
       <DependentUpon>SelecionClienteContrato.aspx</DependentUpon>
     </Compile>
     <Compile Include="SelecionClienteContrato.aspx.vb">
       <DependentUpon>SelecionClienteContrato.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Site.Master.designer.vb">
-      <DependentUpon>Site.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Site.Master.vb">
-      <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="FormClausula.aspx.designer.vb">
@@ -312,7 +361,6 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <Content Include="Site.Master" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
