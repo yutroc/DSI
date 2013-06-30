@@ -11,50 +11,59 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Site1
+Partial Public Class ReporteCumplimiento
 
     '''<summary>
-    '''HeadContent control.
+    '''Label2 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents HeadContent As Global.System.Web.UI.WebControls.ContentPlaceHolder
+    Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Form1 control.
+    '''Chart1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Form1 As Global.System.Web.UI.HtmlControls.HtmlForm
+    Protected WithEvents Chart1 As Global.System.Web.UI.DataVisualization.Charting.Chart
 
     '''<summary>
-    '''HeadLoginView control.
+    '''GridView1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents HeadLoginView As Global.System.Web.UI.WebControls.LoginView
+    Protected WithEvents GridView1 As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
-    '''NavigationMenu control.
+    '''SqlDataSourceDetalle control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents NavigationMenu As Global.System.Web.UI.WebControls.Menu
+    Protected WithEvents SqlDataSourceDetalle As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
-    '''MainContent control.
+    '''SqlDataSourceDetalle2 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents MainContent As Global.System.Web.UI.WebControls.ContentPlaceHolder
+    Protected WithEvents SqlDataSourceDetalle2 As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''SqlDataSourceResumen control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SqlDataSourceResumen As Global.System.Web.UI.WebControls.SqlDataSource
 End Class

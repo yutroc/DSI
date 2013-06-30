@@ -35,12 +35,20 @@
                     <Items>
                         <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Inicio" />
                         <asp:MenuItem NavigateUrl="~/ListadoContratoClausula.aspx" Text="Contratos" />
-                        <asp:MenuItem Text="Cumplimientos" />
+                        <asp:MenuItem Text="Cumplimientos" NavigateUrl="~/MenuCumplimiento.aspx" />
                         <asp:MenuItem NavigateUrl="~/MantenedorClausulas.aspx" Text="Clusulas" />
                         <asp:MenuItem NavigateUrl="~/WebFormListadoCliente.aspx" Text="Clientes" />
                         <asp:MenuItem NavigateUrl="~/MantenedorAnexo.aspx" Text="Anexos" />
                         <asp:MenuItem NavigateUrl="~/MantenedorProducto.aspx" Text="Productos" />
                         <asp:MenuItem NavigateUrl="~/ListadoCLienteRevisaContrato.aspx" Text="Contratos de un cliente" />
+                        <asp:MenuItem Text="Reportes" Value="Reportes">
+                            <asp:MenuItem NavigateUrl="~/ReporteClientes.aspx" Text="Clientes" 
+                                Value="Clientes"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/ReporteContrato.aspx" Text="Contratos" 
+                                Value="Contratos"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/ReporteCumplimiento.aspx" Text="Cumplimientos" 
+                                Value="Cumplimientos"></asp:MenuItem>
+                        </asp:MenuItem>
                     </Items>
                 </asp:Menu>
             </div>
