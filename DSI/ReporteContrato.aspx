@@ -35,21 +35,22 @@
     <br />
     <br />
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
-        DataKeyNames="ID_CONTRATO" DataSourceID="SqlDataSourceContrato">
+        DataKeyNames="ID_CONTRATO" DataSourceID="SqlDataSourceContrato" 
+        AllowPaging="True" AllowSorting="True">
         <Columns>
-            <asp:BoundField DataField="ID_CONTRATO" HeaderText="ID_CONTRATO" 
+            <asp:BoundField DataField="ID_CONTRATO" HeaderText="ID CONTRATO" 
                 ReadOnly="True" SortExpression="ID_CONTRATO" />
-            <asp:BoundField DataField="FC_CREACION" HeaderText="FC_CREACION" 
+            <asp:BoundField DataField="FC_CREACION" HeaderText="FECHA CREACION" 
                 SortExpression="FC_CREACION" />
-            <asp:BoundField DataField="FC_INICIO" HeaderText="FC_INICIO" 
+            <asp:BoundField DataField="FC_INICIO" HeaderText="FECHA INICIO" 
                 SortExpression="FC_INICIO" />
-            <asp:BoundField DataField="FC_TERMINO" HeaderText="FC_TERMINO" 
+            <asp:BoundField DataField="FC_TERMINO" HeaderText="FECHA TERMINO" 
                 SortExpression="FC_TERMINO" />
-            <asp:BoundField DataField="VALOR_TOTAL" HeaderText="VALOR_TOTAL" 
+            <asp:BoundField DataField="VALOR_TOTAL" HeaderText="VALOR TOTAL" 
                 SortExpression="VALOR_TOTAL" />
-            <asp:BoundField DataField="U_ORIGEN" HeaderText="U_ORIGEN" 
+            <asp:BoundField DataField="U_ORIGEN" HeaderText="UBICACION ORIGEN" 
                 SortExpression="U_ORIGEN" />
-            <asp:BoundField DataField="U_DESTINO" HeaderText="U_DESTINO" 
+            <asp:BoundField DataField="U_DESTINO" HeaderText="UBICACION DESTINO" 
                 SortExpression="U_DESTINO" />
             <asp:BoundField DataField="ESTADO" HeaderText="ESTADO" 
                 SortExpression="ESTADO" />
@@ -59,45 +60,48 @@
         </Columns>
     </asp:GridView>
     <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" 
-        DataKeyNames="ID_CONTRATO" DataSourceID="SqlDataSourceContrTodos">
+        DataKeyNames="ID_CONTRATO" DataSourceID="SqlDataSourceContrTodos" 
+        AllowPaging="True" AllowSorting="True">
         <Columns>
-            <asp:BoundField DataField="ID_CONTRATO" HeaderText="ID_CONTRATO" 
+            <asp:BoundField DataField="ID_CONTRATO" HeaderText="ID CONTRATO" 
                 ReadOnly="True" SortExpression="ID_CONTRATO" />
-            <asp:BoundField DataField="FC_CREACION" HeaderText="FC_CREACION" 
+            <asp:BoundField DataField="FC_CREACION" HeaderText="FECHA CREACION" 
                 SortExpression="FC_CREACION" />
-            <asp:BoundField DataField="FC_INICIO" HeaderText="FC_INICIO" 
+            <asp:BoundField DataField="FC_INICIO" HeaderText="FECHA INICIO" 
                 SortExpression="FC_INICIO" />
-            <asp:BoundField DataField="FC_TERMINO" HeaderText="FC_TERMINO" 
+            <asp:BoundField DataField="FC_TERMINO" HeaderText="FECHA TERMINO" 
                 SortExpression="FC_TERMINO" />
-            <asp:BoundField DataField="VALOR_TOTAL" HeaderText="VALOR_TOTAL" 
+            <asp:BoundField DataField="VALOR_TOTAL" HeaderText="VALOR TOTAL" 
                 SortExpression="VALOR_TOTAL" />
-            <asp:BoundField DataField="U_ORIGEN" HeaderText="U_ORIGEN" 
+            <asp:BoundField DataField="U_ORIGEN" HeaderText="UBICACION ORIGEN" 
                 SortExpression="U_ORIGEN" />
-            <asp:BoundField DataField="U_DESTINO" HeaderText="U_DESTINO" 
+            <asp:BoundField DataField="U_DESTINO" HeaderText="UBICACION DESTINO" 
                 SortExpression="U_DESTINO" />
             <asp:BoundField DataField="ESTADO" HeaderText="ESTADO" 
                 SortExpression="ESTADO" />
-            <asp:BoundField DataField="EXPR4" HeaderText="EXPR4" SortExpression="EXPR4" />
-            <asp:BoundField DataField="NOMBRE" HeaderText="NOMBRE" 
+            <asp:BoundField DataField="NOMBRE" HeaderText="CLIENTE" 
                 SortExpression="NOMBRE" />
+            <asp:BoundField DataField="EXPR4" HeaderText="TIPO" 
+                SortExpression="EXPR4" />
         </Columns>
     </asp:GridView>
     <asp:GridView ID="GridView3" runat="server" AutoGenerateColumns="False" 
-        DataKeyNames="ID_CONTRATO" DataSourceID="SqlDataSourceContrTipo">
+        DataKeyNames="ID_CONTRATO" DataSourceID="SqlDataSourceContrTipo" 
+        AllowPaging="True" AllowSorting="True">
         <Columns>
-            <asp:BoundField DataField="ID_CONTRATO" HeaderText="ID_CONTRATO" 
+            <asp:BoundField DataField="ID_CONTRATO" HeaderText="ID CONTRATO" 
                 ReadOnly="True" SortExpression="ID_CONTRATO" />
-            <asp:BoundField DataField="FC_CREACION" HeaderText="FC_CREACION" 
+            <asp:BoundField DataField="FC_CREACION" HeaderText="FECHA CREACION" 
                 SortExpression="FC_CREACION" />
-            <asp:BoundField DataField="FC_INICIO" HeaderText="FC_INICIO" 
+            <asp:BoundField DataField="FC_INICIO" HeaderText="FECHA INICIO" 
                 SortExpression="FC_INICIO" />
-            <asp:BoundField DataField="FC_TERMINO" HeaderText="FC_TERMINO" 
+            <asp:BoundField DataField="FC_TERMINO" HeaderText="FECHA TERMINO" 
                 SortExpression="FC_TERMINO" />
-            <asp:BoundField DataField="VALOR_TOTAL" HeaderText="VALOR_TOTAL" 
+            <asp:BoundField DataField="VALOR_TOTAL" HeaderText="VALOR TOTAL" 
                 SortExpression="VALOR_TOTAL" />
-            <asp:BoundField DataField="U_ORIGEN" HeaderText="U_ORIGEN" 
+            <asp:BoundField DataField="U_ORIGEN" HeaderText="UBICACION ORIGEN" 
                 SortExpression="U_ORIGEN" />
-            <asp:BoundField DataField="U_DESTINO" HeaderText="U_DESTINO" 
+            <asp:BoundField DataField="U_DESTINO" HeaderText="UBICACION DESTINO" 
                 SortExpression="U_DESTINO" />
             <asp:BoundField DataField="ESTADO" HeaderText="ESTADO" 
                 SortExpression="ESTADO" />
@@ -109,28 +113,30 @@
     <asp:SqlDataSource ID="SqlDataSourceContrTipo" runat="server" 
         ConnectionString="<%$ ConnectionStrings:ConnectionStringDSI %>" 
         ProviderName="<%$ ConnectionStrings:ConnectionStringDSI.ProviderName %>" 
-        SelectCommand="SELECT SC_CONTRATO.ID_CONTRATO, SC_CONTRATO.FC_CREACION, SC_CONTRATO.FC_INICIO, SC_CONTRATO.FC_TERMINO, SC_CONTRATO.VALOR_TOTAL, SC_CONTRATO.U_ORIGEN, SC_CONTRATO.U_DESTINO, ESTADO.ESTADO, SC_CLIENTE.NOMBRE, SC_TIPO_CONTRATO.NOMBRE AS TIPO FROM SC_CONTRATO, ESTADO, SC_CLIENTE, SC_TIPO_CONTRATO WHERE SC_CONTRATO.ESTADO_VIGENCIA = ESTADO.ID AND SC_CONTRATO.ESTADO_VIGENCIA = ESTADO.ID AND SC_CONTRATO.RUT = SC_CLIENTE.RUT AND ESTADO.ID = SC_CLIENTE.ESTADO AND SC_CONTRATO.ID_TIPO_CONTRATO = SC_TIPO_CONTRATO.ID_TIPO_CONTRATO AND SC_CONTRATO.ID_TIPO_CONTRATO = SC_TIPO_CONTRATO.ID_TIPO_CONTRATO AND (SC_CONTRATO.ID_TIPO_CONTRATO = :TIPO)">
+        
+        SelectCommand="SELECT SC_CONTRATO.ID_CONTRATO, SC_CONTRATO.FC_CREACION, SC_CONTRATO.FC_INICIO, SC_CONTRATO.FC_TERMINO, SC_CONTRATO.VALOR_TOTAL, SC_CONTRATO.U_ORIGEN, SC_CONTRATO.U_DESTINO, ESTADO.ESTADO, SC_CLIENTE.NOMBRE, SC_TIPO_CONTRATO.NOMBRE AS TIPO FROM SC_CONTRATO, ESTADO, SC_TIPO_CONTRATO, SC_CLIENTE_CONTRATO, SC_CLIENTE WHERE SC_CONTRATO.ESTADO_VIGENCIA = ESTADO.ID AND SC_CONTRATO.ESTADO_VIGENCIA = ESTADO.ID AND SC_CONTRATO.ID_TIPO_CONTRATO = SC_TIPO_CONTRATO.ID_TIPO_CONTRATO AND SC_CONTRATO.ID_TIPO_CONTRATO = SC_TIPO_CONTRATO.ID_TIPO_CONTRATO AND SC_CONTRATO.ID_CONTRATO = SC_CLIENTE_CONTRATO.ID_CONTRATO AND SC_CLIENTE_CONTRATO.RUT = SC_CLIENTE.RUT AND (SC_CONTRATO.ID_TIPO_CONTRATO = :TIPO)">
         <SelectParameters>
             <asp:ControlParameter ControlID="DropDownListTipo" DefaultValue="" Name="TIPO" 
                 PropertyName="SelectedValue" />
         </SelectParameters>
     </asp:SqlDataSource>
     <asp:GridView ID="GridView4" runat="server" AutoGenerateColumns="False" 
-        DataKeyNames="ID_CONTRATO" DataSourceID="SqlDataSourceContrEstado">
+        DataKeyNames="ID_CONTRATO" DataSourceID="SqlDataSourceContrEstado" 
+        AllowPaging="True" AllowSorting="True">
         <Columns>
-            <asp:BoundField DataField="ID_CONTRATO" HeaderText="ID_CONTRATO" 
+            <asp:BoundField DataField="ID_CONTRATO" HeaderText="ID CONTRATO" 
                 ReadOnly="True" SortExpression="ID_CONTRATO" />
-            <asp:BoundField DataField="FC_CREACION" HeaderText="FC_CREACION" 
+            <asp:BoundField DataField="FC_CREACION" HeaderText="FECHA CREACION" 
                 SortExpression="FC_CREACION" />
-            <asp:BoundField DataField="FC_INICIO" HeaderText="FC_INICIO" 
+            <asp:BoundField DataField="FC_INICIO" HeaderText="FECHA INICIO" 
                 SortExpression="FC_INICIO" />
-            <asp:BoundField DataField="FC_TERMINO" HeaderText="FC_TERMINO" 
+            <asp:BoundField DataField="FC_TERMINO" HeaderText="FECHA TERMINO" 
                 SortExpression="FC_TERMINO" />
-            <asp:BoundField DataField="VALOR_TOTAL" HeaderText="VALOR_TOTAL" 
+            <asp:BoundField DataField="VALOR_TOTAL" HeaderText="VALOR TOTAL" 
                 SortExpression="VALOR_TOTAL" />
-            <asp:BoundField DataField="U_ORIGEN" HeaderText="U_ORIGEN" 
+            <asp:BoundField DataField="U_ORIGEN" HeaderText="UBICACION ORIGEN" 
                 SortExpression="U_ORIGEN" />
-            <asp:BoundField DataField="U_DESTINO" HeaderText="U_DESTINO" 
+            <asp:BoundField DataField="U_DESTINO" HeaderText="UBICACION DESTINO" 
                 SortExpression="U_DESTINO" />
             <asp:BoundField DataField="ESTADO" HeaderText="ESTADO" 
                 SortExpression="ESTADO" />
@@ -142,7 +148,8 @@
     <asp:SqlDataSource ID="SqlDataSourceContrEstado" runat="server" 
         ConnectionString="<%$ ConnectionStrings:ConnectionStringDSI %>" 
         ProviderName="<%$ ConnectionStrings:ConnectionStringDSI.ProviderName %>" 
-        SelectCommand="SELECT SC_CONTRATO.ID_CONTRATO, SC_CONTRATO.FC_CREACION, SC_CONTRATO.FC_INICIO, SC_CONTRATO.FC_TERMINO, SC_CONTRATO.VALOR_TOTAL, SC_CONTRATO.U_ORIGEN, SC_CONTRATO.U_DESTINO, ESTADO.ESTADO, SC_CLIENTE.NOMBRE, SC_TIPO_CONTRATO.NOMBRE AS TIPO FROM SC_CONTRATO, ESTADO, SC_CLIENTE, SC_TIPO_CONTRATO WHERE SC_CONTRATO.ESTADO_VIGENCIA = ESTADO.ID AND SC_CONTRATO.RUT = SC_CLIENTE.RUT AND SC_CONTRATO.ID_TIPO_CONTRATO = SC_TIPO_CONTRATO.ID_TIPO_CONTRATO AND (SC_CONTRATO.ESTADO_VIGENCIA = :ESTADO)">
+        
+        SelectCommand="SELECT SC_CONTRATO.ID_CONTRATO, SC_CONTRATO.FC_CREACION, SC_CONTRATO.FC_INICIO, SC_CONTRATO.FC_TERMINO, SC_CONTRATO.VALOR_TOTAL, SC_CONTRATO.U_ORIGEN, SC_CONTRATO.U_DESTINO, ESTADO.ESTADO, SC_CLIENTE.NOMBRE, SC_TIPO_CONTRATO.NOMBRE AS TIPO FROM SC_CONTRATO, ESTADO, SC_TIPO_CONTRATO, SC_CLIENTE_CONTRATO, SC_CLIENTE WHERE SC_CONTRATO.ESTADO_VIGENCIA = ESTADO.ID AND SC_CONTRATO.ID_TIPO_CONTRATO = SC_TIPO_CONTRATO.ID_TIPO_CONTRATO AND SC_CONTRATO.ID_CONTRATO = SC_CLIENTE_CONTRATO.ID_CONTRATO AND SC_CLIENTE_CONTRATO.RUT = SC_CLIENTE.RUT AND (SC_CONTRATO.ESTADO_VIGENCIA = :ESTADO)">
         <SelectParameters>
             <asp:ControlParameter ControlID="DropDownListEstado" Name="ESTADO" 
                 PropertyName="SelectedValue" />
@@ -151,13 +158,15 @@
     <asp:SqlDataSource ID="SqlDataSourceContrTodos" runat="server" 
         ConnectionString="<%$ ConnectionStrings:ConnectionStringDSI %>" 
         ProviderName="<%$ ConnectionStrings:ConnectionStringDSI.ProviderName %>" 
-        SelectCommand="SELECT SC_CONTRATO.ID_CONTRATO, SC_CONTRATO.FC_CREACION, SC_CONTRATO.FC_INICIO, SC_CONTRATO.FC_TERMINO, SC_CONTRATO.VALOR_TOTAL, SC_CONTRATO.U_ORIGEN, SC_CONTRATO.U_DESTINO, ESTADO.ESTADO, SC_TIPO_CONTRATO.NOMBRE AS EXPR4, SC_CLIENTE.NOMBRE FROM SC_CONTRATO, ESTADO, SC_CLIENTE, SC_TIPO_CONTRATO WHERE SC_CONTRATO.ESTADO_VIGENCIA = ESTADO.ID AND SC_CONTRATO.RUT = SC_CLIENTE.RUT AND SC_CONTRATO.ID_TIPO_CONTRATO = SC_TIPO_CONTRATO.ID_TIPO_CONTRATO">
+        
+        SelectCommand="SELECT SC_CONTRATO.ID_CONTRATO, SC_CONTRATO.FC_CREACION, SC_CONTRATO.FC_INICIO, SC_CONTRATO.FC_TERMINO, SC_CONTRATO.VALOR_TOTAL, SC_CONTRATO.U_ORIGEN, SC_CONTRATO.U_DESTINO, ESTADO.ESTADO, SC_TIPO_CONTRATO.NOMBRE AS EXPR4, SC_CLIENTE.NOMBRE FROM SC_CONTRATO, ESTADO, SC_TIPO_CONTRATO, SC_CLIENTE_CONTRATO, SC_CLIENTE WHERE SC_CONTRATO.ESTADO_VIGENCIA = ESTADO.ID AND SC_CONTRATO.ID_TIPO_CONTRATO = SC_TIPO_CONTRATO.ID_TIPO_CONTRATO AND SC_CONTRATO.ID_CONTRATO = SC_CLIENTE_CONTRATO.ID_CONTRATO AND SC_CLIENTE_CONTRATO.RUT = SC_CLIENTE.RUT">
     </asp:SqlDataSource>
     <asp:SqlDataSource ID="SqlDataSourceContrato" runat="server" 
         ConnectionString="<%$ ConnectionStrings:ConnectionStringDSI %>" 
         ProviderName="<%$ ConnectionStrings:ConnectionStringDSI.ProviderName %>" 
         
-        SelectCommand="SELECT SC_CONTRATO.ID_CONTRATO, SC_CONTRATO.FC_CREACION, SC_CONTRATO.FC_INICIO, SC_CONTRATO.FC_TERMINO, SC_CONTRATO.VALOR_TOTAL, SC_CONTRATO.U_ORIGEN, SC_CONTRATO.U_DESTINO, ESTADO.ESTADO, SC_CLIENTE.NOMBRE, SC_TIPO_CONTRATO.NOMBRE AS TIPO FROM SC_CONTRATO, ESTADO, SC_CLIENTE, SC_TIPO_CONTRATO WHERE SC_CONTRATO.ESTADO_VIGENCIA = ESTADO.ID AND ESTADO.ID = SC_CLIENTE.ESTADO AND SC_CONTRATO.ID_TIPO_CONTRATO = SC_TIPO_CONTRATO.ID_TIPO_CONTRATO  AND (SC_CLIENTE.NOMBRE = :RUT) ">
+        
+        SelectCommand="SELECT SC_CONTRATO.ID_CONTRATO, SC_CONTRATO.FC_CREACION, SC_CONTRATO.FC_INICIO, SC_CONTRATO.FC_TERMINO, SC_CONTRATO.VALOR_TOTAL, SC_CONTRATO.U_ORIGEN, SC_CONTRATO.U_DESTINO, ESTADO.ESTADO, SC_CLIENTE.NOMBRE, SC_TIPO_CONTRATO.NOMBRE AS TIPO FROM SC_CONTRATO, ESTADO, SC_TIPO_CONTRATO, SC_CLIENTE_CONTRATO, SC_CLIENTE WHERE SC_CONTRATO.ESTADO_VIGENCIA = ESTADO.ID AND SC_CONTRATO.ID_TIPO_CONTRATO = SC_TIPO_CONTRATO.ID_TIPO_CONTRATO AND SC_CONTRATO.ID_CONTRATO = SC_CLIENTE_CONTRATO.ID_CONTRATO AND SC_CLIENTE_CONTRATO.RUT = SC_CLIENTE.RUT AND (SC_CLIENTE.NOMBRE = :RUT)">
         <SelectParameters>
             <asp:ControlParameter ControlID="TextBoxCliente" Name="RUT" PropertyName="Text" 
                 Type="String" />
